@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pemesanan Barang - Praktikum 2</title>
+</head>
+<body>
+
+    <!-- Form Utama -->
+    <form action="prak2_kelompok_11_desainuiux_pemweb_hasil.html" method="get">
+        <table border="0" cellpadding="8" cellspacing="0">
+            <tr valign="top">
+                <!-- Kolom Kiri: Bingkai Foto Barang & File Input -->
+                <td width="200" align="center">
+                    <table border="1" width="160" height="160" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td align="center" valign="middle">
+                                <img src="/assets/foto laptop asus.jpg" alt="Foto Laptop Asus" width="150" height="150">
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <input type="file" id="upload_file" name="upload_file">
+                </td>
+
+                <!-- Kolom Kanan: Form Inputs -->
+                <td>
+                    <table border="0" cellpadding="4" cellspacing="0">
+                        <tr>
+                            <td align="right"><label for="title"><b>Judul Barang</b></label></td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td>
+                                <input type="text" id="title" name="title" value="Asus X411MA" size="35" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top"><label for="description"><b>Deskripsi</b></label></td>
+                            <td valign="top">&nbsp;:&nbsp;</td>
+                            <td>
+                                <textarea id="description" name="description" rows="4" cols="32" required>Tahun: 2018&#10;Model: X411ma&#10;Kondisi: Mulus</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="account_number"><b>Nomor Rekening</b></label></td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td>
+                                <input type="text" id="account_number" name="account_number" value="901070307596" size="35" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="bank"><b>Bank</b></label></td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td>
+                                <select id="bank" name="bank" required>
+                                    <option value="BCA">BCA</option>
+                                    <option value="Mandiri">Mandiri</option>
+                                    <option value="BNI" selected>BNI</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="account_holder"><b>Nama Pemilik Rekening</b></label></td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td>
+                                <input type="text" id="account_holder" name="account_holder" value="Muhammad Nafis Nashrullah" size="35" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top"><label for="transaction"><b>Transaksi</b></label></td>
+                            <td valign="top">&nbsp;:&nbsp;</td>
+                            <td>
+                                <select id="transaction" name="transaction">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3" selected>1</option>
+                                </select>
+                                <br>
+                                <font size="2"><i>* Jika transaksi untuk 3 orang, pilih 3 dari daftar pilihan</i></font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" id="send_mobile_chk" name="send_mobile_chk" checked>
+                                <label for="send_mobile_chk">Kirim ke Nomor HP</label><br>
+                                <input type="checkbox" id="send_email_chk" name="send_email_chk" checked>
+                                <label for="send_email_chk">Kirim ke Email</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="send_mobile"><b>Kirim ke Nomor HP</b></label></td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td>
+                                <input type="text" id="send_mobile" name="send_mobile" value="08571511111" size="35" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="send_email"><b>Kirim ke Email</b></label></td>
+                            <td>&nbsp;:&nbsp;</td>
+                            <td>
+                                <input type="text" id="send_email" name="send_email" value="nafisnashrullah@gmail.com" size="35" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <br>
+                                <input type="submit" value="Buat Tautan Web">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
